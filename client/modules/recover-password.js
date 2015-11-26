@@ -25,7 +25,7 @@ let validation = ( template ) => {
 };
 
 let _handleRecovery = ( template ) => {
-  let email = template.find( '[name="emailAddress"]' ).value;
+  let email = $( '[name="emailAddress"]' ).val();
 
   Accounts.forgotPassword( { email: email }, ( error ) => {
     if ( error ) {

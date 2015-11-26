@@ -35,7 +35,7 @@ let validation = ( template ) => {
 
 let _handleReset = ( template ) => {
   var token    = FlowRouter.current().params.token,
-      password = template.find( '[name="newPassword"]' ).value;
+      password = $( '[name="newPassword"]' ).val();
 
   Accounts.resetPassword( token, password, ( error ) => {
     if ( error ) {
