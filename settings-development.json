@@ -3,6 +3,7 @@
     "key": "value"
   },
   "private": {
-    "MAIL_URL": ""
+    "MAIL_URL": "smtp://postmaster%40sellerenvy.com:e57ce8c2b28e3285ee00206f61403f2b@smtp.mailgun.org:587",
+    "domain": "localhost:3000"
   }
 }

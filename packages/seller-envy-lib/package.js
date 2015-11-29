@@ -42,20 +42,24 @@ Package.onUse(function(api) {
   var packages = [
     'accounts-base',
     'accounts-password',
+    'alanning:roles@1.2.14',
     'aldeed:collection2',
     'audit-argument-checks',
     'browser-policy',
     'check',
     'digilord:faker',
     'ecmascript',
+    'email',
     'fourseven:scss',
     'jquery',
-    'kadira:flow-router-ssr',
-    'kadira:dochead',
+    'kadira:flow-router-ssr@3.6.0',
+    'kadira:dochead@1.4.0',
     'kadira:react-layout',
     'meteor-base',
     'meteorhacks:npm',
+    'momentjs:moment@2.10.6',
     'npm-container',
+    'random',
     'react',
     'reactive-dict',
     'reactive-var',
@@ -78,6 +82,8 @@ Package.onUse(function(api) {
   ],['client', 'server']);
 
   api.export([
-    'SellerEnvy'
+    'SellerEnvy',
+    'publicRoutes',
+    'authenticatedRoutes'
   ]);
 });
