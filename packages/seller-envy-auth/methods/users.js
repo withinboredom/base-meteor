@@ -39,5 +39,20 @@ Meteor.methods({
     catch (ex) {
       return ex;
     }
+  },
+  acceptInvitation(user) {
+    check(user, {
+      email: String,
+      password: Object,
+      token: String
+    });
+
+    try {
+      var userId = SellerEnvy.Modules.server.acceptInvitation(user);
+      return userId;
+    }
+    catch (ex) {
+      return ex;
+    }
   }
 });

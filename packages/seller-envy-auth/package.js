@@ -36,6 +36,7 @@ Package.onUse(function(api) {
     'components/client/user-edit.jsx',
     'components/client/users.jsx',
     'components/client/invite-edit.jsx',
+    'components/client/invite.jsx',
     'components/client/send-invitation-modal.jsx',
 
     'routes/authenticated.jsx',
@@ -48,6 +49,7 @@ Package.onUse(function(api) {
     'admin/server/reset-password.js',
     'modules/server/generate-account.js',
     'modules/server/send-invitation.jsx',
+    'modules/server/accept-invitation.js',
 
     'components/templates/invite.jsx',
 

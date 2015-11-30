@@ -11,3 +11,8 @@ Meteor.publish('users', () => {
     return null;
   }
 });
+
+Meteor.publish('invite', (token) => {
+  check(token, String);
+  return SellerEnvy.Collection.Invitation.find({'token': token});
+});

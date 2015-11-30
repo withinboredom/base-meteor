@@ -58,6 +58,7 @@ Package.onUse(function(api) {
     'meteor-base',
     'meteorhacks:npm',
     'momentjs:moment@2.10.6',
+    'msavin:mongol@1.6.2',
     'npm-container',
     'random',
     'react',

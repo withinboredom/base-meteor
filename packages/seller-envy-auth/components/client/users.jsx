@@ -4,8 +4,8 @@ SellerEnvy.Views.Users = React.createClass({
     let subscription = Meteor.subscribe('users');
 
     return {
-      users: Meteor.users.find().fetch(),
-      invites: SellerEnvy.Collection.Invitation.find().fetch()
+      users: Meteor.users.find(),
+      invites: SellerEnvy.Collection.Invitation.find()
     }
   },
   componentDidMount() {
