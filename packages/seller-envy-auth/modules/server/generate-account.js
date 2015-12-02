@@ -2,7 +2,7 @@ let administrators = [
   {
     name: { first: 'Robert', last: 'Landers' },
     email: 'landers.robert@gmail.com',
-    password: 'password'
+    password: 'password',
   }
 ];
 
@@ -31,7 +31,7 @@ let _createUsers = ( users ) => {
         isAdmin = _checkIfAdmin( user.email );
 
       if ( isAdmin ) {
-        Roles.setUserRoles( userId, 'admin' );
+        Roles.setUserRoles( userId, 'super-admin' );
       } else {
         Roles.setUserRoles( userId, 'employee' );
       }
@@ -48,7 +48,8 @@ let _createUser = ( user ) => {
     email: user.email,
     password: user.password,
     profile: {
-      name: user.name
+      name: user.name,
+      tenant: user.tenant
     }
   });
 
@@ -68,7 +69,8 @@ let _generateFakeUsers = ( count ) => {
     users.push({
       name: { first: faker.name.firstName(), last: faker.name.lastName() },
       email: faker.internet.email(),
-      password: 'password'
+      password: 'password',
+      tenant: 'fake'
     });
   }
 

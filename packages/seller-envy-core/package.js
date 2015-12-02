@@ -16,6 +16,8 @@ Package.onUse(function(api) {
   api.imply(packages);
 
   api.addFiles([
+    'collections/tenants.js',
+
     // module setup
     'modules/both/core.js',
     'modules/both/startup.js',

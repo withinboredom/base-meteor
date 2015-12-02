@@ -15,6 +15,9 @@ SellerEnvy.Views.AuthenticatedNavigation = React.createClass({
           <li className={FlowHelpers.currentRoute('users')}>
             <a href={FlowHelpers.pathFor('users')}>Users</a>
           </li>
+          <li className={FlowHelpers.currentRoute('inventory')}>
+            <a href={FlowHelpers.pathFor('inventory')}>Inventory</a>
+          </li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
           <li className="dropdown">

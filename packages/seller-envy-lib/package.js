@@ -50,6 +50,7 @@ Package.onUse(function(api) {
     'digilord:faker',
     'ecmascript',
     'email',
+    'flipace:tenantify',
     'fourseven:scss',
     'jquery',
     'kadira:flow-router-ssr',

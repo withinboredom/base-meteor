@@ -16,8 +16,23 @@ Package.onUse(function(api) {
   api.imply(packages);
 
   api.addFiles([
+    'define.js',
+
+    'collections/inventory.js',
+    'collections/conditions.js',
+    'collections/productIDTypes.js',
+
+    'components/inventory.jsx',
+    'components/inventory-add.jsx',
+    'components/inventory-detail.jsx',
+    'components/inventorySearch.jsx',
+
+    'routes/authenticated.jsx',
+
+    'startup.js'
   ], ['client', 'server']);
 
   api.addFiles([
+    'publications/inventory.js'
   ], ['server']);
 });

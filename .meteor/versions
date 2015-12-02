@@ -37,8 +37,10 @@ ecmascript-runtime@0.2.6
 ejson@1.0.7
 email@1.0.8
 es5-shim@4.1.14
+flipace:tenantify@0.1.1
 fortawesome:fontawesome@4.4.0_1
 fourseven:scss@3.4.1
+gadicohen:headers@0.0.31
 geojson-utils@1.0.4
 hot-code-push@1.0.0
 html-tools@1.0.5
@@ -54,11 +56,13 @@ lai:collection-extensions@0.1.4
 livedata@1.0.15
 localstorage@1.0.5
 logging@1.0.8
+matb33:collection-hooks@0.7.15
 meteor@1.1.10
 meteor-base@1.0.1
 meteorhacks:async@1.0.0
 meteorhacks:fast-render@2.10.0
 meteorhacks:inject-data@1.4.1
+meteorhacks:inject-initial@1.0.3
 meteorhacks:npm@1.5.0
 meteorhacks:picker@1.0.3
 meteortoys:toykit@2.2.1
@@ -89,6 +93,7 @@ routepolicy@1.0.6
 seller-envy:app@0.0.1
 seller-envy:auth@0.0.1
 seller-envy:core@0.0.1
+seller-envy:editor@0.0.1
 seller-envy:lib@0.0.1
 seller-envy:people@0.0.1
 service-configuration@1.0.5
