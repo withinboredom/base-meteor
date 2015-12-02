@@ -5,7 +5,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom("METEOR@1.0");
+  api.versionsFrom("METEOR@1.2.1");
 
   var packages = [
     'seller-envy:core@0.0.1'

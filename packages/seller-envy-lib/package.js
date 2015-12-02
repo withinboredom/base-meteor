@@ -5,7 +5,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom(['METEOR@1.0']);
+  api.versionsFrom(['METEOR@1.2.1']);
 
   /*
    accounts-base                    1.2.2  A user account system
@@ -42,7 +42,7 @@ Package.onUse(function(api) {
   var packages = [
     'accounts-base',
     'accounts-password',
-    'alanning:roles@1.2.14',
+    'alanning:roles',
     'aldeed:collection2',
     'audit-argument-checks',
     'browser-policy',
@@ -52,13 +52,13 @@ Package.onUse(function(api) {
     'email',
     'fourseven:scss',
     'jquery',
-    'kadira:flow-router-ssr@3.6.0',
-    'kadira:dochead@1.4.0',
+    'kadira:flow-router-ssr',
+    'kadira:dochead',
     'kadira:react-layout',
     'meteor-base',
     'meteorhacks:npm',
-    'momentjs:moment@2.10.6',
-    'msavin:mongol@1.6.2',
+    'momentjs:moment',
+    'msavin:mongol',
     'npm-container',
     'random',
     'react',

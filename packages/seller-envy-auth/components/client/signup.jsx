@@ -11,6 +11,15 @@ SellerEnvy.Views.Signup = React.createClass({
     return (
       <div className="row">
         <div className="col-xs-12 col-sm-6 col-md-4">
+          <h4 className="page-header">Signing Up</h4>
+          <p>We are currently in a private beta. Please use your invitation to signup.</p>
+        </div>
+      </div>
+    );
+
+    return (
+      <div className="row">
+        <div className="col-xs-12 col-sm-6 col-md-4">
           <h4 className="page-header">Sign Up</h4>
           <form id="signup" className="signup" onSubmit={this.handleSubmit}>
             <div className="form-group">

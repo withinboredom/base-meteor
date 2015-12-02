@@ -4,13 +4,21 @@ SellerEnvy.Views.Users = React.createClass({
     let subscription = Meteor.subscribe('users');
 
     return {
-      users: Meteor.users.find(),
-      invites: SellerEnvy.Collection.Invitation.find()
+      ready: subscription.ready(),
+      users: Meteor.users.find({}).fetch(),
+      invites: SellerEnvy.Collection.Invitation.find().fetch()
     }
   },
   componentDidMount() {
   },
   render() {
+    if (!this.data.ready) {
+      return (
+        <div>
+          <h4 className="page-header">Please wait, loading</h4>
+        </div>
+      );
+    }
     if (Roles.userIsInRole(Meteor.user(), 'admin')) {
       return (
         <div>
@@ -32,7 +40,8 @@ SellerEnvy.Views.Users = React.createClass({
 
           <div className="page-header clearfix">
             <h4 className="pull-left">Invitations</h4>
-            <button className="btn btn-success pull-right" data-toggle="modal" data-target="#send-invitation-modal">Send Invite</button>
+            <button className="btn btn-success pull-right" data-toggle="modal"
+                    data-target="#send-invitation-modal">Send Invite</button>
           </div>
           <table className="table table-bordered">
             <thead>

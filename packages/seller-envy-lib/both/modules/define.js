@@ -4,7 +4,7 @@ SellerEnvy.Views = {};
 SellerEnvy.Collection = {};
 
 const publicRedirect = () => {
-  if ( Meteor.userId() ) {
+  if ( Meteor.user() ) {
     FlowRouter.go( 'index' );
   }
 };
@@ -15,10 +15,7 @@ publicRoutes = FlowRouter.group({
 });
 
 const authenticatedRedirect = () => {
-  if (Meteor.isServer) {
-    FlowRouter.go('login');
-  }
-  if ( !Meteor.loggingIn() && !Meteor.userId() ) {
+  if ( !Meteor.loggingIn() && !Meteor.user() ) {
     FlowRouter.go( 'login' );
   }
 };

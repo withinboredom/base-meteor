@@ -1,15 +1,13 @@
 SellerEnvy.Views.AppHeader = React.createClass({
   brandLink() {
-    if ( Meteor.isClient && !Meteor.loggingIn() && !Meteor.userId() ) {
-      return FlowRouter.path( 'login' );
-    } else if (Meteor.isServer) {
+    if ( !Meteor.loggingIn() && !Meteor.userId() ) {
       return FlowRouter.path('login');
     }
 
     return FlowRouter.path( 'index' );
   },
   navigationItems() {
-    if ( Meteor.isClient && !Meteor.loggingIn() && Meteor.user() ) {
+    if ( !Meteor.loggingIn() && Meteor.user() ) {
       return <SellerEnvy.Views.AuthenticatedNavigation />;
     } else {
       return <SellerEnvy.Views.PublicNavigation />;

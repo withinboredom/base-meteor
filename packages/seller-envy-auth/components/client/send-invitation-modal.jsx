@@ -17,6 +17,7 @@ SellerEnvy.Views.InvitationModal = React.createClass({
           $("#send-invitation-modal").modal('hide');
           $(".modal-backdrop").hide();
           Bert.alert("Sent!", "success");
+          this.setState(this.getInitialState());
         }
       })
     }

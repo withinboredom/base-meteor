@@ -28,6 +28,7 @@ Meteor.methods({
       role: String
     });
 
+    this.unblock();
     try {
       SellerEnvy.Modules.server.sendInvitation({
         email: invitation.email,
