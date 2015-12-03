@@ -2,6 +2,7 @@ SellerEnvy = {};
 SellerEnvy.VERSION = "0.0.1";
 SellerEnvy.Views = {};
 SellerEnvy.Collection = {};
+SellerEnvy.lib = {};
 
 const publicRedirect = () => {
   if ( Meteor.user() ) {

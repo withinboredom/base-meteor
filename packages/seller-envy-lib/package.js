@@ -45,7 +45,7 @@ Package.onUse(function(api) {
     'alanning:roles',
     'aldeed:collection2',
     'audit-argument-checks',
-    'browser-policy',
+    //'browser-policy',
     'check',
     'digilord:faker',
     'ecmascript',

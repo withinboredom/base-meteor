@@ -25,14 +25,15 @@ Package.onUse(function(api) {
     'components/inventory.jsx',
     'components/inventory-add.jsx',
     'components/inventory-detail.jsx',
-    'components/inventorySearch.jsx',
+    'components/inventory-search.jsx',
+    'components/inventory-list.jsx',
+    'components/inventory-list-item.jsx',
 
     'routes/authenticated.jsx',
-
-    'startup.js'
   ], ['client', 'server']);
 
   api.addFiles([
-    'publications/inventory.js'
+    'publications/inventory.js',
+    'startup.js'
   ], ['server']);
 });

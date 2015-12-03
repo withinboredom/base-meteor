@@ -37,6 +37,15 @@ Package.onUse(function(api) {
     // components
     'components/layouts/default.jsx',
 
+    'components/library/layout.jsx',
+    'components/library/masterbar.jsx',
+    'components/library/masterbarLoggedOutMenu.jsx',
+    'components/library/masterbarSectionMenu.jsx',
+    'components/library/noticesList.jsx',
+    'components/library/pulsingDot.jsx',
+    'components/library/welcome.jsx',
+    'components/library/welcomeMessage.jsx',
+
     // stylesheets
     'stylesheets/tools/_extends.scss',
     'stylesheets/objects/_forms.scss',
